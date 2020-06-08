@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>近期活動</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/style_index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    
+    <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> 
+    <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+</head>
+
+<body>
+  <div class="title">
+    <div>
+      <img src="../img/logo.jpg" height="100px" style="margin-top: -20px;">
+     </div>
+  </div>
+  <ul>
+    <li><a  href="index.html">Home</a></li>
+    <li><a  href="news.html">News</a></li>
+    <li><a class="title_active" href="search.html">Search</a></li>
+    <li style="float: right"><a href="Login.html">Login</a></li>
+  </ul>
+    <br><br><br>
+
+    <div id="img_text1">
+      <div class="container"><br><br><br>
+        <form class="search" action="search.html">
+            <h2>館藏查詢</h2>
+              <br><br>
+              <div class="form-group">
+                <label for="text">查詢字詞 :</label>
+                <input type="text" class="form-control" id="text" placeholder="輸入關鍵字">
+                <small id="error_alert_1" style="color: red;"></small>
+              </div>
+              <br><br>
+              <div class="form-group">
+                <label for="Name">查詢欄位 :</label>
+                <select type="Name" class="form-control" id="Name">
+                    <option selected="false"></option>
+                  　<option value="Book">書名</option>
+                  　<option value="Person">作者</option>
+                  　<option value="Store">出版社</option>
+                </select>
+                <small id="error_alert_2" style="color: red;"></small>
+              </div>
+              <br><br><br><br>
+              <div style="text-align: center"><button id="button" type="button" onclick="error()">提交</button></div>
+              <br><br>
+          </form>
+      </div>
+    </div>
+</body>
+
+</html>
