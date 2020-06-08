@@ -1,0 +1,75 @@
+.login {
+  border: 1px gray solid;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10em auto;
+  width: 20em;
+  position: relative;
+  
+}
+
+.form-group {
+  font: normal bold 1em/1 "Droid Serif", serif;
+  margin: auto;
+  text-align: left;
+  margin-top: 1em;
+  width: 70%;
+}
+
+#button {
+  background: #073763;
+  background: linear-gradient(#073763, #ccc);
+  border-radius: 1000px;
+  padding: 8px 20px;
+  color: #fff;
+  display: inline-block;
+  font: normal bold 14px/1 "Droid Serif", serif;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+  margin-top: 1em;
+}
+
+body {
+  margin: 0;
+  background-image: url("../img/back.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightblue;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: tomato;
+}
+
+form h2 {
+  font: normal bold 1.5em/1 "Droid Serif", serif;
+  text-align: center;
+  padding: 0.5em;
+  }

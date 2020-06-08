@@ -1,0 +1,117 @@
+.title {
+  padding:20px;
+  margin-top:0;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+body {
+  margin: 0;
+  background-image: url("../img/back.jpg");
+  background-repeat: repeat;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightblue;
+  position: fixed;
+  top: 7em;
+  width: 100%;
+  z-index: 2;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.title_active {
+  background-color: tomato;
+}
+
+#img {
+  width: auto;
+  width: 100%;
+  height: auto;
+  top: 12em;
+  background-color: white;
+}
+
+#mark_text {
+  display: table;
+  width: 55%;
+  float: left;
+  font-weight: 900;
+  font-size: large;
+  padding: 0.5em;
+}
+
+.in_text {
+  font-weight: 600;
+  font-size: medium;
+  color: darkgray;
+  position: relative;
+  left: 15em;
+  top: -13em;
+  width: 60%;
+}
+
+.more {
+  position: relative;
+  left: 18em;
+  top: -1em;
+}
+
+#img_text1 {
+  margin:120px auto;
+  width: 80%;
+  background-color: white;
+  opacity: 0.9;
+}
+
+#Footer {
+  height: 200px;
+  position: relative;
+  margin-top: 100px;
+  background-color: lightblue;
+  overflow: hidden;
+  width: 100%;
+  }
+
+  .input {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.5em; 
+    text-align: center;
+    vertical-align: middle;
+    background-color:#ffffff;
+    border-style: none;
+    margin:0;
+  }
+
+  form {
+    padding:0;
+    margin:0.2em;
+  }
+
+  .calendar {
+    background-color: white;
+    position: relative;
+    right: 30em;
+  }

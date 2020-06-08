@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>註冊</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/style_regist.css">
+    <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> 
+
+    <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> 
+    <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script>
+      function error() {
+        let t = document.getElementById("pwd").value;
+        let s = document.getElementById("account").value;
+        let l = document.getElementById("name").value;
+          if(s == "") {
+            document.getElementById('error_alert_1').innerHTML = "此欄位不可為空";
+          }
+          else if(s != ""){
+            document.getElementById('error_alert_1').innerHTML = "";
+          }
+          if (t == "") {
+            document.getElementById('error_alert_2').innerHTML = "此欄位不可為空";
+         }
+         else if (t != "") {
+            document.getElementById('error_alert_2').innerHTML = "";
+         }
+         if (l == "") {
+            document.getElementById('error_alert_3').innerHTML = "此欄位不可為空";
+         }
+         else if (l != "") {
+            document.getElementById('error_alert_3').innerHTML = "";
+         }
+          if (s != "" && t != ""&& l != "") {
+            window.alert('註冊成功');
+            window.location.href='index.html';
+          }
+      }
+    </script>
+</head>
+
+<body>
+    <ul id="top">
+      <li><a class="title_active" href="index.html">Home</a></li>
+      <li><a  href="news.html">News</a></li>
+      <li style="float: right"><a href="Login.html">Login</a></li>
+    </ul>
+    
+    <form class="regist" action="registered.html">
+        <h2>註冊</h2>
+        <div class="form-group">
+            姓名: <input type="text" id="name" placeholder="輸入姓名">
+            <br><small id="error_alert_3" style="color: red;"></small>
+        </div>
+        <br>
+        <div class="form-group">
+            性別: <input type="radio" name="sex" value="male">男性
+                  <input type="radio" name="sex" value="female">女性
+                  <input type="radio" name="sex" value="other">其他
+        </div>
+        <br>
+        <div class="form-group">
+            生日:  <input type="date" name="birth">
+        </div>
+        <br>
+        <div class="form-group">
+            帳號/email: <input type="account" id="account" placeholder="輸入帳號">
+            <br><small id="error_alert_1" style="color: red;"></small>
+        </div>
+        <br>
+        <div class="form-group">
+            密碼: <input type="password" id="pwd" placeholder="輸入密碼">
+            <br><small id="error_alert_2" style="color: red;"></small>
+        </div>
+        <br><br>
+        <div style="text-align: center;"><button id="button" type="button" onclick="error()">Submit</button></div>
+        <br>
+      </form>
+
+</body>
+
+</html>
