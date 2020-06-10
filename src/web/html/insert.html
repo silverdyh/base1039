@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>圖片</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="../css/style_index.css">
+    <link rel="stylesheet" type="text/css" href="../css/style_image.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    
+    <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script> 
+    <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script>
+        function choose() {
+            let c = document.getElementById('database'); 
+            let a = document.getElementById('database');
+            let b = document.getElementById('database');
+            let s = c.options[c.selectedIndex].value;
+            var input_name = document.getElementById('input_name'), input_author = document.getElementById('input_author');
+            input_name.style.display=input_author.style.display='none';
+            if(s == '1'){
+                let c = document.getElementById("b_id").innerHTML = "書籍編號";
+                let a = document.getElementById("b_name").innerHTML = "書名";
+                input_name.style.display='inline-block';
+                let b = document.getElementById("b_author").innerHTML = "作者";
+                input_author.style.display='inline-block';
+            } else if(s == '2'){
+                let c = document.getElementById("b_id").innerHTML = "書籍編號";
+                let a = document.getElementById("b_name").innerHTML = "";
+                let b = document.getElementById("b_author").innerHTML = "";
+            } else if(s == '3'){
+                let c = document.getElementById("b_id").innerHTML = "書籍編號";
+                let a = document.getElementById("b_name").innerHTML = "";
+                let b = document.getElementById("b_author").innerHTML = "";
+            }
+        }
+        function changeData() {
+            let c = document.getElementById('database');
+            let s = c.options[c.selectedIndex].value;
+            let n_id = document.getElementById("input-id").value;
+            let n_name = document.getElementById("input-name").value;
+            if(n_id == "") {
+                document.getElementById('error-id').innerHTML = "輸入不可為空白";
+            } else if(n_id != "") {
+                document.getElementById('error-id').innerHTML = "";
+            }
+            if(n_name == "") {
+                document.getElementById('error-name').innerHTML = "輸入不可為空白";
+            } else if(n_name != "") {
+                document.getElementById('error-name').innerHTML = "";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="title">
+        <div>
+            <img src="../img/logo.jpg" height="100px" style="margin-top: -20px;">
+        </div>
+    </div>
+    <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a  href="news.html">News</a></li>
+        <li><a  href="search.html">Search</a></li>
+        <li style="float: right"><a href="Login.html">Login</a></li>
+    </ul>
+    <br><br><br>
+
+    <div id="img_text1">
+        <div class="container">
+            <form action="">
+                <div class="form-group">
+                    <select class="form-control" id="database" onchange="choose()">
+                      　<option value="1" selected>新增</option>
+                      　<option value="2">刪除</option>
+                      　<option value="3">變更</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="input_id" id="b_id">書籍編號</label>
+                    <input type="text" class="form-control" id="input_id" />
+                    <small id="error-id" style="color: red;"></small><br>
+                    
+                    <label for="input_name" id="b_name">書名</label>
+                    <input class="form-control" id="input_name" />
+                    <small id="error-name" style="color: red;"></small><br>
+                    
+                    <label for="input_author" id="b_author">作者</label>
+                    <input class="form-control" id="input_author" />
+                    
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="changeData()">送出</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
