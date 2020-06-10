@@ -21,7 +21,7 @@
      </div>
   </div>
   <ul>
-    <li><a  href="in">Home</a></li>
+    <li><a  href="index.html">Home</a></li>
     <li><a  href="news.html">News</a></li>
     <li><a class="title_active" href="search.php">Search</a></li>
     <li style="float: right"><a href="Login.html">Login</a></li>
