@@ -72,9 +72,9 @@
 
     <div id="img_text1">
         <div class="container"><br><br><br>
-            <form action="">
+            <form action="insert.php">
                 <div class="form-group">
-                    <select class="form-control" id="database" onchange="choose()">
+                    <select class="form-control" id="database" name="select" onchange="choose()">
                       　<option value="1" selected>新增</option>
                       　<option value="2">刪除</option>
                       　<option value="3">變更</option>
@@ -82,19 +82,20 @@
                 </div>
                 <div class="form-group">
                     <label for="input_id" id="b_id">書籍編號</label>
-                    <input type="text" class="form-control" id="input_id" />
+                    <input class="form-control" id="input_id" name="bookid" />
                     <small id="error-id" style="color: red;"></small><br>
                     
                     <label for="input_name" id="b_name">書名</label>
-                    <input class="form-control" id="input_name" />
+                    <input class="form-control" id="input_name" name="bookname" />
                     <small id="error-name" style="color: red;"></small><br>
                     
                     <label for="input_author" id="b_author">作者</label>
-                    <input class="form-control" id="input_author" />
+                    <input class="form-control" id="input_author" name="bookauthor" />
                     
                 </div>
                 <button type="submit" class="btn btn-primary" onclick="changeData()">送出</button>
             </form><br><br><br>
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
