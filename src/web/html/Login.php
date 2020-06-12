@@ -27,9 +27,8 @@
          else if (t != "") {
             document.getElementById('error_alert_2').innerHTML = "";
          }
-          if (s != "" && t != "") {
-            window.alert('登入成功');
-            window.location.href='index.html';
+         if (s != "" && t != "") {
+            window.location.href='loginto.php';
           }
       }
     </script>
@@ -37,32 +36,30 @@
 
 <body>
     <ul id="top">
-      <li><a class="title_active" href="index.html">Home</a></li>
+      <li><a class="title_active" href="index.php">Home</a></li>
       <li><a  href="news.html">News</a></li>
       <li><a  href="search.php">Search</a></li>
-      <li style="float: right"><a href="Login.html">Login</a></li>
+      <li style="float: right"><a href="Login.php">Login</a></li>
     </ul>
     
-    <form class="login" action="Login.html">
+    <form name="login" action="loginto.php" method="post" class="login">
       <h2>登入</h2>
-        <div class="form-group">
-          <label for="account">帳號 :</label>
-          <input type="account" class="form-control" id="account" placeholder="輸入帳號">
-          <small id="error_alert_1" style="color: red;"></small>
-        </div>
-        <br>
-        <div class="form-group">
-          <label for="pwd">密碼 :</label>
-          <input type="password" class="form-control" id="pwd" placeholder="輸入密碼">
-          <small id="error_alert_2" style="color: red;"></small>
-        </div>
-
-        <div style="overflow: hidden;margin-top: 50px;">
-            <small style="float:right;color: darkgray;">還沒有帳號?&nbsp;<a href="registered.html" style="float:right;">註冊</a></small>
-        </div>
-
-        <div style="text-align: center"><button id="button" type="button" onclick="error()">Login</button></div>
+      <div class="form-group">
+        使用者名稱 : <br>
+        <input class="form-control" id="account" placeholder="輸入帳號" type=text name="name">
+        <br><br><br><br>
+      </div>
+      
+      <div class="form-group">
+        密碼 : <br>
+        <input type=password name="password" class="form-control" id="pwd" placeholder="輸入密碼">
         <br><br>
+      </div>
+      
+      <div style="text-align: center">
+      <input type="submit" name="submit" value="登入" id="button">
+      <br><br><br><br>
+    </div>
     </form>
 
 </body>
