@@ -9,7 +9,7 @@
     $row = mysqli_fetch_array($result_status);
 
     if($select=="1"){
-        $sql = "INSERT INTO books (b_id, b_name, b_author, b_status) VALUES ($bookname, $bookid, $bookauthor, '1');";
+        $sql = "INSERT INTO books (b_id, b_name, b_author, b_status) VALUES ($bookid, '$bookname', '$bookauthor', '1');";
     }
     elseif($select=="2"){
         $sql = "DELETE FROM books WHERE b_id = $bookid";
