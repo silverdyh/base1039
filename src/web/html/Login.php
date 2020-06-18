@@ -37,7 +37,6 @@
 <body>
     <ul id="top">
       <li><a class="title_active" href="index.php">Home</a></li>
-      <li><a  href="news.html">News</a></li>
       <li><a  href="search.php">Search</a></li>
       <li style="float: right"><a href="Login.php">Login</a></li>
     </ul>

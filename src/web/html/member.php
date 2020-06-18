@@ -16,13 +16,12 @@
 <body>
     <div class="title">
         <div>
-            <img src="../img/logo.jpg" height="100px" style="margin-top: -20px; margin-left: calc(50% - 25px);">
+            <img src="../img/logo.jpg" height="100px" style="margin-top: -20px; margin-left: calc(50% - 75px);">
         </div>
     </div>
     <ul>
-        <li><a  href="index.php">Home</a></li>
-        <li><a  href="news.html">News</a></li>
-        <li><a class="title_active" href="search.php">Search</a></li>
+        <li><a  href="index_login.html">Home</a></li>
+        <li><a class="title_active" href="search_login.php">Search</a></li>
         <li style="float: right"><a href="Login.php">Sing out</a></li>
     </ul>
         <br><br><br>
@@ -47,12 +46,24 @@
                 echo "<h4>姓名: ";
 				echo $rows2['name']."<br><br></h4>";
 				echo "<h4>性別 : ";
-				echo $rows2['Sex']."<br><br></h4>";
+                if($rows2['Sex']=='M'){
+                    echo "男"."<br><br></h4>";
+                }
+                else if($rows2['Sex']=='F'){
+                    echo "女"."<br><br></h4>";
+                }
+                else {
+                    echo "<br><br></h4>";
+                }
 				echo "<h4>E-mail : ";
-                echo $rows2['e-mail']."</h4>";
+                echo $rows2['e_mail']."<br><br></h4>";
+                echo "<h4>電話 : ";
+                echo $rows2['phone']."<br><br></h4>";
+                echo "<h4>地址 : ";
+                echo $rows2['address']."<br><br></h4>";
             ?>
             <br><br><br><br>
-            <input type="button" value="修改" onclick="self.location.href='change.php'"/>
+            <input type="button" value="修改" onclick="self.location.href='mem_change.html'"/>
             <br><br>
            
       </div>

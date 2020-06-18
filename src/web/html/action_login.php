@@ -22,9 +22,9 @@
         </div>
     </div>
   <ul>
-    <li><a  href="index.php">Home</a></li>
-    <li><a class="title_active" href="search.php">Search</a></li>
-    <li style="float: right"><a href="Login.php">Login</a></li>
+    <li><a  href="index_login.html">Home</a></li>
+    <li><a class="title_active" href="search_login.php">Search</a></li>
+    <li style="float: right"><a href="Login.php">Sing out</a></li>
   </ul>
     <br><br><br>
 

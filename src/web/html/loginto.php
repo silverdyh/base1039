@@ -31,7 +31,7 @@
     if($rows){//0 false 1 true
       setcookie("login",$name, time()+360);
       setcookie("pass",$passowrd, time()+360);
-      header("refresh:0;url=turn.html");//如果成功跳轉至turn.html頁面
+      header("refresh:0;url=change.html");//如果成功跳轉至turn.html頁面
       exit;
     }
     else if($rows2){
